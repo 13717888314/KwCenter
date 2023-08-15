@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>智为天下研发中心一体化集成平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/jqFancyTransitions.1.7.min.js" type="text/javascript"></script>
+<script src="js/tabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#slider').jqFancyTransitions({
+			effect: 'curtain', // wave, zipper, curtain
+			width: 642, // width of panel
+			height: 414, // height of panel
+			strips: 10, // number of strips
+			delay: 5000, // delay between images in ms
+			stripDelay: 50, // delay beetwen strips in ms
+			position: 'alternate', // top, bottom, alternate, curtain
+			direction: 'fountainAlternate', // left, right, alternate, random, fountain, fountainAlternate
+			navigation: false, // prev and next navigation buttons
+			links: false // show images as links
+		});
+	})
+</script>	
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+
+<body id="page1">
+  <div id="main">
+    <!-- header -->
+    <div id="header">
+      <div class="row-1">
+      	<div class="logo">
+        	<h1><a href="#">智为天下研发中心一体化集成平台</a></h1>
+        </div>
+{#        <form action="" id="search-form">#}
+{#          <fieldset>#}
+{#          	<input type="text" class="text" value="search" onfocus="if(this.value=='search'){this.value=''}" onblur="if(this.value==''){this.value='search'}"/><input type="submit" class="submit" value=""/>#}
+{#          </fieldset>#}
+{#        </form>#}
+      </div>
+      <div class="row-2">
+      	<!-- .nav -->
+      	<ul class="nav">
+        	<li button onclick = "window.location.href = '../login' " class="first"><a href="#" >首页</a></li>
+          <li><a button onclick = "window.location.href = '../index1' " href="#">测试IP资源</a></li>
+{#        <input type="button" onclick='location.href=("index.aspx")' />//在本页面打开#}
+          <li><a button onclick = "window.location.href = '../index2' " href="#">禅道&jenkins资源</a></li>
+          <li><a button onclick = "window.location.href = '../index3' " href="#">数据库&重要账号资源</a></li>
+          <li><a button onclick = "window.location.href = '../index4' " href="#">其他资源</a></li>
+
+        </ul>
+      	<!-- /.nav -->
+      </div>
+    </div>
+      <p></p>
+      <div class="indent">
+        <div class="wrapper">
+          <div class="col-1">
+
+               <h3 style="margin-top: 30px;margin-bottom: 20px">测试环境API接口获取在线中心token</h3>
+                  <form action="/index5/"  method="post">
+                          {% csrf_token %}
+                          <p style="margin-bottom: 15px">
+                         <lable><a>请输入账号：</a></lable>
+                         <input name="username" value="" type="text">
+                         </p>
+                         <lable><a>请输入密码：</a></lable>
+                         <input name="password" value="" type="text">
+                         <p>
+{#                              <input type="submit" value="提交"  class="link1">#}
+                             <input href="#" type="submit"  class="link1" style="height: 20px;width: 50px;margin-bottom: 15px;margin-top: 15px">
+                         </p>
+                     </form>
+                  <div >
+                     <textarea rows="" cols="" style="height: 100px;width:550px;margin-bottom: 20px">
+                        {{ token }}
+                     </textarea>
+                  </div>
+
+              <h3 style="margin-top: 30px;margin-bottom: 20px">测试环境API接口获取在线中心Appid</h3>
+                  <form action="/index6/" method="post">
+                          {% csrf_token %}
+                          <p style="margin-bottom: 15px">
+                         <lable><a>请输入账号：</a></lable>
+                         <input name="username" value="" type="text">
+                         </p>
+                         <lable><a>请输入密码：</a></lable>
+                         <input name="password" value="" type="text">
+                         <p>
+{#                              <input type="submit" value="提交"  class="link1">#}
+                             <input href="#" type="submit"  class="link1" style="height: 20px;width: 50px;margin-bottom: 15px;margin-top: 15px">
+                         </p>
+                     </form>
+                  <div >
+                     <textarea rows="" cols="" style="height: 100px;width:550px;margin-bottom: 20px">
+                        {{ dit }}
+                     </textarea>
+                  </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- footer -->
+  <div id="footer">
+  	<div class="container">
+    	<!-- .nav -->
+    	<ul class="nav">
+      	<li><a href="#">home</a>|</li>
+        <li><a href="#">services</a>|</li>
+        <li><a href="#">products</a>|</li>
+        <li><a href="#">features</a>|</li>
+        <li><a href="#">orders form</a>|</li>
+        <li><a href="#">our equipment</a>|</li>
+        <li><a href="#">contact info</a></li>
+      </ul>
+    	<!-- /.nav -->
+      <span>智为天下研发中心一体化集成平台</span> &nbsp;&copy; &nbsp;2023.&nbsp; &nbsp;<a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7078796-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

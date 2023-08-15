@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>智为天下研发中心一体化集成平台</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/layout.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="js/jqFancyTransitions.1.7.min.js" type="text/javascript"></script>
+<script src="js/tabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('#slider').jqFancyTransitions({
+			effect: 'curtain', // wave, zipper, curtain
+			width: 642, // width of panel
+			height: 414, // height of panel
+			strips: 10, // number of strips
+			delay: 5000, // delay between images in ms
+			stripDelay: 50, // delay beetwen strips in ms
+			position: 'alternate', // top, bottom, alternate, curtain
+			direction: 'fountainAlternate', // left, right, alternate, random, fountain, fountainAlternate
+			navigation: false, // prev and next navigation buttons
+			links: false // show images as links
+		});
+	})
+</script>	
+<!--[if lt IE 7]>
+	<link href="ie_style.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+
+<body id="page1">
+  <div id="main">
+    <!-- header -->
+    <div id="header">
+      <div class="row-1">
+      	<div class="logo">
+        	<h1><a href="#">智为天下研发中心一体化集成平台</a></h1>
+        </div>
+{#        <form action="" id="search-form">#}
+{#          <fieldset>#}
+{#          	<input type="text" class="text" value="search" onfocus="if(this.value=='search'){this.value=''}" onblur="if(this.value==''){this.value='search'}"/><input type="submit" class="submit" value=""/>#}
+{#          </fieldset>#}
+{#        </form>#}
+      </div>
+      <div class="row-2">
+      	<!-- .nav -->
+      	<ul class="nav">
+        	<li button onclick = "window.location.href = '../login' " class="first"><a href="#" >首页</a></li>
+          <li><a button onclick = "window.location.href = '../index1' " href="#">测试IP资源</a></li>
+{#        <input type="button" onclick='location.href=("index.aspx")' />//在本页面打开#}
+          <li><a button onclick = "window.location.href = '../index2' " href="#">禅道&jenkins资源</a></li>
+          <li><a button onclick = "window.location.href = '../index3' " href="#">数据库&重要账号资源</a></li>
+
+          <li><a button onclick = "window.location.href = '../index4' " href="#">其他资源</a></li>
+
+        </ul>
+      	<!-- /.nav -->
+      </div>
+    </div>
+      <p></p>
+      <div class="indent">
+        <div class="wrapper">
+          <div class="col-1">
+            <h3 >禅道IP</h3>
+            <ul class="news">
+
+                    <h4><a button onclick = "href = 'http://124.223.81.115:9999/zentao/'"  target="_blank" href="#"><font size="3">http://124.223.81.115:9999/zentao/</font></a></h4>
+                    <h5 style="color: #606060;font-weight: bolder;font-size: 14px">账号1：jiazihan &nbsp; 密码：jzh123</h5>
+                    <table>
+                        <tr><td><img  src="../static/images/cdtp.png" width="650" /></td>
+                            </tr>
+                    </table>
+
+                    <h3 style="margin-top: 20px">Jenkins构建IP</h3>
+
+
+                    <h4><a button onclick = "href = 'http://124.223.81.115:7777/'"  target="_blank" href="#"><font size="3">Jenkins构建IP：http://124.223.81.115:7777/</font></a></h4>
+                    <h5 style="color: #606060;font-weight: bolder;font-size: 14px">登录账号：zwtx &nbsp; 密码：zwtx</h5>
+                    <table>
+                        <tr><td><img  src="../static/images/jenkins.png" width="650" /></td>
+                            <td></td></tr>
+                    </table>
+                    <p></p>
+
+
+
+                <h4 style="color: #cc0000;margin-bottom: 30px">注意事项：JENKINS服务在服务器中的路径卡死时手动到重启：/home/zwtx/webapp/jenkins_web/bin/jenkin_start.sh</h4>
+
+
+                <h4 style="font-size: 15px">Jenkins切换主干与测试环境时修改路径如下：（web与定时任务切换时不需要修改）</h4>
+                <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                <h4>openy-wxms分支：svn://124.223.81.115/zwtx/智为天下/研发部/source/openy-wxms/api/branches/openy-wxms-20230815</h4>
+                <h4>openy-wxms主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-wxms/api/trunks</h4>
+                <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                <h4>activities-service分支：svn://124.223.81.115/zwtx/智为天下/研发部/source/openy-service/activities-service/branches/activities-service-20230421</h4>
+                <h4>activities-service主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-service/activities-service/trunks</h4>
+                <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                  <h4>openy-web分支：svn://124.223.81.115/zwtx/智为天下/研发部/source/oswn/branches/openy-web-20230815</h4>
+                  <h4 >openy-web主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/oswn/trunk</h4>
+                  <h4 style="color: #cc0000;">注意事项：openy-web的'主干'和'分支'不能同时构建启动，只能启动其中一个</h4>
+                    <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                  <h4>cms-service分支：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-service/cms-service/branches/cms-service-20220804</h4>
+                  <h4>cms-service主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-service/cms-service/trunks/cms-service</h4>
+                    <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                  <h4>cms-web分支：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-cms/branches/openwhy-cms-20220518</h4>
+                  <h4>cms-web主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-cms/trunk/openwhy-cms</h4>
+                    <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                  <h4>app-cms-web分支：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-cms/branches/app-cms-20220518</h4>
+                  <h4>app-cms-web主干：svn://172.17.0.7/zwtx/智为天下/研发部/source/openy-cms/trunk/app-cms</h4>
+                   <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+
+                   <h3 style="margin-top: 40px;margin-bottom: 5px">服务器服务手动启动</h3>
+                    <a><img src="../static/images/futp.png" width="500" height="250" /></a>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">测试服务器</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">地址：124.223.81.115 &nbsp;  端口号：22 &nbsp; 账号：zwtx &nbsp; 密码：zwtx!@#</h5>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">启动CMS-WEB</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">-->>cd /home/zwtx/webapp/openy_service/cms-service -->> ./start_cms-service.sh</h5>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">启动CMS-API</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">-->>cd /home/zwtx/webapp/openy_service/cms-service -->> ./start_cms-service.sh</h5>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">启动CMS-APP-WEB</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">-->>cd /home/zwtx/webapp/app_cms_web -->> ./start_app_cms_web.sh</h5>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">CMS-WEB路径</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">-->>cd /home/zwtx/webapp/cms_web/ -->> ./start_cms_web.sh</h5>
+                        <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">CMS-API路径</h4>
+                        <h5 style="color: #606060;font-weight: bolder;">-->>cd /home/zwtx/webapp/openy_service/cms-service/ -->> ./start_cms-service.sh</h5>
+
+                     <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">定时任务</h4>
+                     <h5 style="color: #606060;font-weight: bolder;">-->>/home/zwtx/webapp/jenkins_web/bin/jenkin_crontab_branch.sh</h5>
+                     <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">活动</h4>
+                     <h5 style="color: #606060;font-weight: bolder;">-->>/home/zwtx/webapp/jenkins_web/bin/jenkin_activities-service.sh</h5>
+                <h4 style="color: #cc0000">注意事项：起不来的时候可先启动：-->>/home/zwtx/webapp/openy_service/eureka-server-->>start_eureka-server.sh（测试环境服务或jinkens启不来时）</h4>
+                   <p style="width:1000px;height:0px;border-top:1px darkgray dashed;margin-bottom: 10px"></p>
+                     <h4 style="margin-top: 15px;font-size: 15px;margin-bottom: 5px">服务器DIST包部署</h4>
+                     <h5 style="color: #606060;font-weight: bolder; margin-bottom: 30px">-->>cd /home/zwtx/webapp/openy_wxms/web-->>rm -rf dist-->>rm -rf dist.zip-->>rz XXX/dist.zip-->>unzip dist.zip</h5>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div id="footer">
+  	<div class="container">
+    	<!-- .nav -->
+    	<ul class="nav">
+      	<li><a href="#">home</a>|</li>
+        <li><a href="#">services</a>|</li>
+        <li><a href="#">products</a>|</li>
+        <li><a href="#">features</a>|</li>
+        <li><a href="#">orders form</a>|</li>
+        <li><a href="#">our equipment</a>|</li>
+        <li><a href="#">contact info</a></li>
+      </ul>
+    	<!-- /.nav -->
+      <span>智为天下研发中心一体化集成平台</span> &nbsp;&copy; &nbsp;2023.&nbsp; &nbsp;<a href="#">Privacy Policy</a>
+    </div>
+  </div>
+  <script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7078796-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
