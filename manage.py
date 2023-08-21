@@ -2,7 +2,9 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import pydevd_pycharm
 
+# pydevd_pycharm.settrace('192.168.100.102', port=12345, stdoutToServer=True, stderrToServer=True)
 
 def main():
     """Run administrative tasks."""
