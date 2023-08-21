@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-362!$%o7v-=$#dpf5ydygv4mtsbg)luky2ga@x(47oyt*)1(d&
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['192.168.100.102']
+ALLOWED_HOSTS = ['192.168.100.105']
 DEBUG = True
 PORT = 7007
 

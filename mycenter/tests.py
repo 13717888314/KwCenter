@@ -7,6 +7,7 @@ import pandas as pd
 import requests
 import mysql.connector
 import datetime
+import math
 import time
 
 def query_data():
@@ -186,6 +187,7 @@ if __name__ == '__main__':
     # db_data = query_data(sql_query)
     # db_data= query_data()
     #   yyjg()
-     idd = datetime.time
-     print("idd:: " + str(idd))
+    timestamp = time.time()
+    integer_timestamp = math.floor(timestamp)
+    print("整数时间戳（向下取整）：", str(integer_timestamp))
      # yyidnew()

@@ -2,9 +2,6 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
-import pydevd_pycharm
-
-# pydevd_pycharm.settrace('192.168.100.102', port=12345, stdoutToServer=True, stderrToServer=True)
 
 def main():
     """Run administrative tasks."""
@@ -22,6 +19,6 @@ def main():
 
 if __name__ == '__main__':
      from django.core.management.commands.runserver import Command as Runserver
-     Runserver.default_addr = '192.168.100.102'  # 修改默认地址
+     Runserver.default_addr = '192.168.100.105'  # 修改默认地址
      Runserver.default_port = '8008'  # 修改默认端口
      main()

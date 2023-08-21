@@ -1,10 +1,8 @@
 from django.shortcuts import render
 import requests
-import mysql.connector
-import mycenter.common
-import sqlite3
+import math
+import time
 import pymysql
-import pandas as pd
 import json
 # Create your views here.
 
@@ -143,13 +141,14 @@ def tjyy(request):
         password='teb#Fn8y-3p',  # 密码
         database='openy',  # 数据库名称
     )
-
+    timestamp = time.time()
+    integer_timestamp = math.floor(timestamp)
     yyid = request.POST.get("yyid")
     try:
         # 步骤2：通过连接对象获取游标对象 ---> Cursor
         with conn.cursor() as cursor:
             # 步骤3：通过游标对象向数据库发出SQL并获取执行结果
-            sql = "INSERT INTO reservation_template VALUES ("+yyid+",'5',"+yyid+",'2023-08-15 14:16:09');"
+            sql = "INSERT INTO reservation_template VALUES ("+str(integer_timestamp)+",'5',"+yyid+",'2023-08-15 14:16:09');"
             affected_rows = cursor.execute(sql)
             if affected_rows == 1:
                 print('预约模板添加成功！！！')
